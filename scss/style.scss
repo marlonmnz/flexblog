@@ -86,6 +86,189 @@ img{
     }
 }
 
+// Introdução
+
+.introducao{
+    font-size: 3em;
+    line-height: 1;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 60px 10px;
+}
+
+// Sobre
+
+.sobre{
+    border-top: 2px solid #2c70ff ;
+    border-bottom: 2px solid #2c70ff ;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 60px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sobre-info{
+    flex: 2 1 300px;
+    margin: 0 10px;
+
+    h1{
+        font-size: 3em;
+        margin-bottom: .5em;
+    }
+
+    p{
+        font-size: 1.25em;
+        line-height: 1.4;
+        margin-bottom: 1em;
+        color: #7c7c7c ;
+    }
+}
+
+.sobre-img{
+    flex: 1 1 160px;
+    margin: 0 10px;
+}
+
+
+// Produtos
+
+.produtos{
+    max-width: 960px;
+    margin: 60px auto;
+
+    h1{
+        font-size: 3em;
+        margin: 0 10px 10px 60px;
+    }
+}
+
+.produtos-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+
+    .purple{
+        border-top: 8px solid #ae81ff;
+    }
+
+    .pink{
+        border-top: 8px solid #f9265e;
+    }
+
+    .blue{
+        border-top: 8px solid #66d9eb;
+    }
+
+}
+.produtos-item{
+    flex: 1 1 250px;
+    margin: 10px;
+
+    h2{
+        font-size: 3em;
+        color: #a4a4a4;
+        background: #f7f7f7;
+        padding: 60px 20px;
+    }
+}
+
+// Preços
+
+.preco{
+    background: #f7f7f7;
+    padding: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+
+    // MediaQuery tabela de preços
+
+    @media (max-width:800px){
+        padding-left: 10px;
+        padding-right: 10px;
+
+        &-item:nth-child(3){
+            order: -2;           
+        }
+
+        &-item:nth-child(2){
+            order: -1;           
+        }
+    }
+}
+
+.preco-item{
+    flex: 1 1 260px;
+    border: 4px solid #fff;
+    padding: 20px;
+    margin: 10px;
+    min-width: 260px;
+
+    h2{
+        font-size: 3em;
+        color: #a4a4a4;
+        text-align: center;        
+    }
+
+    span{
+        max-width: 300px;
+        margin: 20px auto;
+        display: block;
+        font-size: 3em;
+        text-align: center;
+        font-weight: bold;
+        padding: 10px 0 5px 0;
+        border-top: 4px solid #fff;
+        border-bottom: 4px solid #fff;
+    }
+
+    sup{
+        font-size: 1.5rem;
+    }
+
+    ul{
+        max-width: 300px;
+        margin: 20px auto;
+        font-size: 1.25em;        
+        font-style: italic;
+        color: #7c7c7c;
+    }
+
+    li{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+
+        &::after{
+            content: '';
+            display: block;
+            width: 6px;
+            height: 6px;
+            background: #2c70ff;
+            border-radius: 50%;
+        }
+    }
+
+    a{
+        max-width: 300px;
+        display: block;
+        margin: 20px auto;
+        border: 4px solid;
+        color: #222;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 2.25em;
+        padding: 15px 0;
+        text-align: center;
+    }
+    
+}
+
+
+
+
 
 
 
